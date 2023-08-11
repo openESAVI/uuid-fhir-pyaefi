@@ -18,9 +18,20 @@ keywords = ["uuid", "aefi", "esavi", "fhir"]
 requires-python = ">=3.9"
 dependencies = []
 
+[project.optional-dependencies]
+build = ["build", "twine"]
+
 [project.urls]
 "Homepage" = "https://github.com/openESAVI/uuid-fhir-pyaefi"
 "Bug Tracker" = ""https://github.com/openESAVI/uuid-fhir-pyaefi/issues"
+
+[tool.bumpver]
+current_version = "1.1.2"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message  = "bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
 
 [tool.hatch.build]
 include = [
