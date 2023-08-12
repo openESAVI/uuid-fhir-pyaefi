@@ -21,30 +21,7 @@ dependencies = []
 [project.optional-dependencies]
 build = ["build", "twine"]
 
-[tool.bumpver]
-current_version = "1.1.2"
-version_pattern = "MAJOR.MINOR.PATCH"
-commit_message  = "bump version {old_version} -> {new_version}"
-commit          = true
-tag             = true
-push            = false
+[project.urls]
+Repository = "https://github.com/openESAVI/uuid-fhir-pyaefi"
+Changelog = "https://github.com/openESAVI/uuid-fhir-pyaefi/releases"
 
-[tool.hatch.build]
-include = [
-    "pkg/**",
-    "/tests",
-]
-exclude = [
-    "*.pyc",
-    "__pycache__",
-    ".cache",
-    ".eggs",
-    ".git",
-    ".tox",
-    ".venv",
-    "build",
-    "dist",
-    "docs",
-    "venv",
-    ".venv",
-]
